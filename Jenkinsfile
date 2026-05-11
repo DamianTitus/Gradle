@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/Hemavathipcse/GradleJenkinsPipeline.git'
+                git branch: 'master', url: 'https://github.com/DamianTitus/Gradle.git'
             }}
         stage('Build') {
             steps {
@@ -23,10 +23,10 @@ pipeline {
             }}}
     post {
         success {
-            echo 'Build and deployment successful!'
+            echo 'Build and execution successful'
         }
         failure {
-            echo 'Build failed!'
+            echo 'Build failed'
        }}}
 
 
